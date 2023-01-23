@@ -1,17 +1,13 @@
-# Funktioita
+# Tähän mennessä käytettyjä funktioita
+# print(X) # Tulostetaan X
+# X = input()  # luetaan merkkijono muuttujaan X
+# str(X)  # muutetaan X merkkijonoksi
 
-#print(x) # Tulostetaan
-#x = input() # Luetaan merkkijono muuttujaan x
-#str(x) # Muutetaan x merkkijonoksi
-#.append(x)
-
-# Vaihtoehto 1
 
 def kysy_nimi():
-    nimi = input('Anna nimesi ')
+    nimi = input("Anna nimi: ")
     return nimi
 
-# Vaihtoehto 2
 
 def kysy_nimet(lkm):
     nimet = []
@@ -20,15 +16,8 @@ def kysy_nimet(lkm):
         nimet.append(nimi)
     return nimet
 
-# Vaihtoehto 3
 
-def kysy_nimet_rekusriolla(jäljellä, nimet = None):
-    if jäljellä == 0:
-        return nimet
-    if nimet is None:
-        nimet = []
-    nimi = kysy_nimi()
-    return kysy_nimet_rekusriolla(jäljellä - 1, nimet + [nimi])
-
-nimilista = kysy_nimet(3)
-print(nimilista)
+if __name__ == "__main__":
+    print("Testataan kolmella nimellä")
+    nimilista = kysy_nimet(3)
+    print("Tulos:", nimilista)

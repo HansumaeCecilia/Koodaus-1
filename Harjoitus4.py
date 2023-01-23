@@ -19,5 +19,5 @@ henkilo2 = Ihminen("Raija", "Ratanen", 1995)
 print(henkilo1)
 print(henkilo2)
 
-print(henkilo1.sukunimi, henkilo1.etunimi)
-print(henkilo2.sukunimi, henkilo2.etunimi)
+print(henkilo1.sukunimi, henkilo1.etunimi + (','), 'ikä:', henkilo1.laske_ika())
+print(henkilo2.sukunimi, henkilo2.etunimi + (','), 'ikä:', henkilo2.laske_ika())

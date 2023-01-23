@@ -22,13 +22,15 @@ def kysy_nimet(lkm):
 
 # Vaihtoehto 3
 
-def kysy_nimet_rekusriolla(jäljellä, nimet = None):
-    if jäljellä == 0:
-        return nimet
-    if nimet is None:
-        nimet = []
-    nimi = kysy_nimi()
-    return kysy_nimet_rekusriolla(jäljellä - 1, nimet + [nimi])
+# def kysy_nimet_rekusriolla(jäljellä, nimet = None):
+#     if jäljellä == 0:
+#         return nimet
+#     if nimet is None:
+#         nimet = []
+#     nimi = kysy_nimi()
+#     return kysy_nimet_rekusriolla(jäljellä - 1, nimet + [nimi])
 
-nimilista = kysy_nimet(3)
-print(nimilista)
+if __name__ == "_main_":
+    print('Testataan kolmella nimellä')
+    nimilista = kysy_nimet(3)
+    print(nimilista)

@@ -11,10 +11,8 @@ nimet = []
     #nimi = input('Anna nimi: ' + str(i) + ': ')
     #nimet.append(nimi)
 
-while True:
+while len(nimet) < 5:
     nimi = input('Anna nimi: ')
-    nimet.append(nimi)
-    if len(nimet) >= 5:
-        break
+    nimet.append(nimi)        
 
 print(nimet)

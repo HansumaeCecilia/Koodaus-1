@@ -9,7 +9,7 @@ class Car:
     def __str__(self):
         
     #teksti = self.make + " " + self.model + " (" + str(self.year) + ") " + self. registration + " " + self.color + " "
-        teksti = f"Auto: {self.make} {self.model} {self.year} {self.registration} {self.color}" #f-string yksinkertaistaa ylläolevan komennon
+        teksti = f"Auton tiedot: {self.make} {self.model} {self.year} {self.registration} {self.color}" #f-string yksinkertaistaa ylläolevan komennon
         return teksti
 
 car1 = Car("Mercedes Benz,", "CLA,", 2015,"ABC-123,", "black")

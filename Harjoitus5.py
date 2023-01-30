@@ -7,7 +7,10 @@ class Car:
         self.color = color
 
     def __str__(self):
-        return self.make + " " + self.model + " (" + str(self.year) + ") " + self. registration + " " + self.color + " "
+        
+    #teksti = self.make + " " + self.model + " (" + str(self.year) + ") " + self. registration + " " + self.color + " "
+        teksti = f"Auto: {self.make} {self.model} {self.year} {self.registration} {self.color}"
+        return teksti
 
 car1 = Car("Mercedes Benz", "CLA,", 2015, "ABC-123,", "black")
 car2 = Car("Audi", "A6", 2004, "BCD-234,", "blue")

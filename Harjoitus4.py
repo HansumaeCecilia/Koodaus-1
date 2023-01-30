@@ -1,7 +1,7 @@
 import datetime
 
 class Ihminen:
-    def __init__(self, etunimi, sukunimi, syntymavuosi): # Aina parametri self alkuun, kun _init_ (MUISTA TUPLA-ALAVIIVAT!)
+    def __init__(self, etunimi, sukunimi, syntymavuosi): # Aina parametri self alkuun, kun __init__ (MUISTA TUPLA-ALAVIIVAT!)
         self.etunimi = etunimi
         self.sukunimi = sukunimi
         self.syntymavuosi = syntymavuosi

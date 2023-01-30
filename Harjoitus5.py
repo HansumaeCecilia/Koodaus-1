@@ -12,9 +12,9 @@ class Car:
         teksti = f"Auto: {self.make} {self.model} {self.year} {self.registration} {self.color}" #f-string yksinkertaistaa ylläolevan komennon
         return teksti
 
-car1 = Car("Mercedes Benz", "CLA,", 2015, "ABC-123,", "black")
-car2 = Car("Audi", "A6", 2004, "BCD-234,", "blue")
-car3 = Car("Opel", "Corsa", 2010, "CDE-345,", "red")
+car1 = Car("Mercedes Benz,", "CLA,", 2015,"ABC-123,", "black")
+car2 = Car("Audi", "A6,", 2004, "BCD-234,", "blue")
+car3 = Car("Opel", "Corsa,", 2010, "CDE-345,", "red")
 
 print(car1)
 print(car2)
